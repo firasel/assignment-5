@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,16 +8,71 @@
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
     <!-- css -->
     <link rel="stylesheet" href="style.css">
-
     <title>Hungry Monster</title>
-</head>
-<body>
-    <h1>hungry Monster</h1>
-    
+  </head>
+  <body>
+    <!-- navbar start -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="images/hungry-logo.png" alt="hungry logo" width="40%">
+          </a>
+          <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-4 fw-bold">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Recipes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Blog</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- navbar end -->
+    <main class="container">
+      <!-- search section start -->
+      <section id="search-sec">
+        <div class="mt-4 mb-5">
+          <div class="input-group mb-3 m-auto w-25">
+            <input type="text" class="form-control" id="searchInput" placeholder="Search for Meal..." aria-describedby="searchButton">
+            <button class="btn text-white fs-5" type="button" id="searchButton">Search</button>
+          </div>
+        </div>
+      </section>
+      <!-- search section end -->
+      <!-- ingredient section start -->
+      <section id="ingredient-sec">
+        <div class="row" id="ingredientShow"></div>
+      </section>
+      <!-- ingredient section end -->
+      <!-- result section start -->
+      <section class="result-sec">
+        <div id="resultArea">
+          <div id="errorShow"></div>
+          <div class="row row-cols-1 row-cols-md-3 g-4" id="resultShow"></div>
+        </div>
+      </section>
+      <!-- result section end -->
+    </main>
 
     <!-- bootstrap js -->
     <script src="bootstrap/bootstrap.bundle.min.js"></script>
     <!-- javascript -->
     <script src="main.js"></script>
-</body>
+  </body>
 </html>

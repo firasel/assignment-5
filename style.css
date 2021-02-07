@@ -1,0 +1,39 @@
+#searchButton{
+    background-color: tomato;
+}
+#searchButton:hover{
+    background-color: rgb(243, 69, 38);
+}
+.cardDesign{
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.ingredientDesign{
+    border: 0;
+    margin: 30px auto;
+    padding:10px 3px;
+}
+.ingredientDesign img{
+    width: 100%;
+    max-height: 600px;
+    border-radius: 10px;
+}
+.ingredientDesign ul li{
+    list-style: none;
+    font-size: 18px;
+    padding: 3px;
+}
+.ingredientDesign h3{
+    cursor: pointer;
+    font-weight: 650;
+    margin-left:-10px;
+    padding: 10px 0;
+    font-size: 30px;
+}
+.ingredientDesign h5{
+    font-weight: 550;
+    margin-left:-10px;
+    padding: 10px 0;
+    font-size: 25px;
+}
