@@ -78,7 +78,7 @@ let ingredientShow = (meal) => {
     for (let i = 1; i < 21; i++) {
         if (meal[`strIngredient${i}`].trim() !== '' || meal[`strMeasure${i}`].trim() !== '') {
             let ingredientText = `${meal[`strMeasure${i}`]} ${meal[`strIngredient${i}`]}`;
-            ingredientList += `<li>${ingredientText}</li>`;
+            ingredientList += `<li><i class="fas fa-check-square checkIcon"></i> ${ingredientText}</li>`;
         } else {
             break;
         }
